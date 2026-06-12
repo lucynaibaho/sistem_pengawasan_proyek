@@ -1,0 +1,152 @@
+/* ===== BASE ===== */
+body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:#0d0d0e;
+    color:#f3f4f6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    background:#111111;
+    border-bottom:1px solid rgba(255,255,255,0.05);
+    padding:18px 0;
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+}
+
+.logo{
+    font-weight:600;
+    font-size:16px;
+    letter-spacing:1px;
+}
+
+.nav-menu a{
+    color:#d1d5db;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:14px;
+    transition:0.2s;
+}
+
+.nav-menu a:hover{
+    color:#f59e0b;
+}
+
+.nav-btn{
+    background:#f59e0b;
+    color:#000 !important;
+    padding:8px 16px;
+    border-radius:6px;
+}
+
+/* ===== HERO ===== */
+.hero{
+    text-align:center;
+    padding:80px 20px 40px;
+}
+
+.hero h1{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#9ca3af;
+    max-width:600px;
+    margin:auto;
+}
+
+/* ===== FORM SECTION ===== */
+.form-section{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px 100px;
+}
+
+.form-card{
+    width:100%;
+    max-width:900px;
+    background:#171717;
+    padding:50px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,0.05);
+    box-shadow:0 25px 70px rgba(0,0,0,0.7);
+}
+
+/* ===== FORM STYLE ===== */
+.field{
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+    color:#d1d5db;
+}
+
+input,select{
+    width:100%;
+    padding:14px;
+    background:#111111;
+    border:1px solid #262626;
+    border-radius:10px;
+    color:#ffffff;
+    font-size:14px;
+    transition:0.2s;
+}
+
+select option{
+    background:#111111;
+    color:#ffffff;
+}
+
+input:focus,select:focus{
+    outline:none;
+    border-color:#f59e0b;
+}
+
+/* ===== GRID ===== */
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-bottom:25px;
+}
+
+/* ===== BUTTON ===== */
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:10px;
+    background:#f59e0b;
+    color:#000;
+    font-weight:600;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+button:hover{
+    box-shadow:0 0 25px rgba(245,158,11,0.6);
+    background:#ffb020;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .grid-2{
+        grid-template-columns:1fr;
+    }
+    .form-card{
+        padding:35px 25px;
+    }
+}

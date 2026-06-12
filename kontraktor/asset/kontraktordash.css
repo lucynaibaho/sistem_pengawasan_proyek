@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#111111;
+    color:#ffffff;
+}
+
+/* Layout */
+.dashboard-container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+    width:260px;
+    background:#1a1a1a;
+    padding:30px 20px;
+    border-right:1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.logo-arch{
+    width:38px;
+    height:38px;
+    stroke:#ffc107;
+    stroke-width:4;
+    fill:none;
+}
+
+.sidebar h2{
+    font-size:16px;
+}
+
+.sidebar span{
+    color:#ffc107;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:#cccccc;
+    padding:10px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.sidebar nav a:hover{
+    background:#ffc107;
+    color:#111;
+}
+
+.logout{
+    margin-top:30px;
+    background:#2a2a2a;
+}
+
+/* Main */
+.main-content{
+    flex:1;
+    padding:50px;
+}
+
+/* Topbar */
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.role-badge{
+    background:#ffc107;
+    color:#111;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+
+/* Stats */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.stat-card{
+    background:#1c1c1c;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.3s;
+}
+
+.stat-card:hover{
+    border:1px solid #ffc107;
+    transform:translateY(-4px);
+}
+
+.stat-card h3{
+    font-size:28px;
+    color:#ffc107;
+}
+
+/* Grid section */
+.grid-section{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+/* Chart */
+.chart-card{
+    background:#1c1c1c;
+    padding:30px;
+    border-radius:12px;
+}
+
+/* Activity */
+.activity-card{
+    background:#1c1c1c;
+    padding:30px;
+    border-radius:12px;
+}
+
+.activity-card ul{
+    list-style:none;
+}
+
+.activity-card li{
+    margin-bottom:15px;
+    font-size:14px;
+    color:#bbbbbb;
+}
